@@ -1,9 +1,11 @@
 .container {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     height: 500px;
     align-items: center;
     justify-content: center;
-    background-color: hotpink;
+    background-color: purple;
 }
 
 .container>div {
@@ -13,4 +15,19 @@
     text-align: center;
     line-height: 75px;
     font-size: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 799px) {
+    .container {
+     height: 70vh;
+     margin: 10px;
+    }    
+
+    @media (max-width: 477px) {
+        .container {
+            height: 100%;
+            margin: 10px;
+        }
+    }
 }
